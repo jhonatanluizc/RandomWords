@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Letras Aleatórias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="inline-elements">
+            <button id="start-button">Iniciar Jogo</button>
+            <button id="end-button" disabled>Finalizar Jogo</button>
+            <label for="rows">Linhas:</label>
+            <input type="number" id="rows" min="1" max="50" value="20">
+            <label for="columns">Colunas:</label>
+            <input type="number" id="columns" min="1" max="50" value="20">
+            <select id="letter-count">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <p id="timer">Tempo: <span id="time">0</span> s</p>
+        <p id="target-letters">Letras a encontrar: <span id="letters"></span></p>
+        <div id="grid"></div>
+        <p id="missed-letters"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

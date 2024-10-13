@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ddd;
+}
+
+#game-container {
+    margin: 0 auto;
+    /* width: 600px; */
+}
+
+#grid {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#timer {
+    margin-top: 20px;
+}
+
+#missed-letters {
+    margin-top: 20px;
+    color: red;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.found {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.missed {
+    background-color: yellow;
+}
+
+.inline-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-elements input {
+    width: 50px;
+}
